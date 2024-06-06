@@ -1,8 +1,12 @@
 import { PlaywrightTestConfig, defineConfig, devices } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-    testMatch: ["tests/uploadDownload.test.ts"],  //comment to show the play green button at left on test
+    testMatch: ["tests/intermediate/howToStopRequest.test.ts"],  //comment to show the play green button at left on test
     use: {
+        baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
+        extraHTTPHeaders: {
+            "Authorization":"Basic YWRtaW46Y2hpbm8="  //go to base64encode.org to encode your password
+        },
         headless: false,
         screenshot: "only-on-failure",
         video: "retain-on-failure",

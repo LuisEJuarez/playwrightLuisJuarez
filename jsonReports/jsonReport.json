@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "c:\\Users\\lernestojuarez\\Documents\\ApexTrainings\\Tech Thread\\Playwright\\playwright.config.ts",
-    "rootDir": "c:/Users/lernestojuarez/Documents/ApexTrainings/Tech Thread/Playwright",
+    "configFile": "C:\\Users\\lernestojuarez\\Documents\\ApexTrainings\\Tech Thread\\Playwright\\playwright.config.ts",
+    "rootDir": "C:/Users/lernestojuarez/Documents/ApexTrainings/Tech Thread/Playwright",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -39,15 +39,15 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "c:/Users/lernestojuarez/Documents/ApexTrainings/Tech Thread/Playwright/test-results",
+        "outputDir": "C:/Users/lernestojuarez/Documents/ApexTrainings/Tech Thread/Playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "",
         "name": "",
-        "testDir": "c:/Users/lernestojuarez/Documents/ApexTrainings/Tech Thread/Playwright",
+        "testDir": "C:/Users/lernestojuarez/Documents/ApexTrainings/Tech Thread/Playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/uploadDownload.test.ts"
+          "tests/intermediate/howToStopRequest.test.ts"
         ],
         "timeout": 30000
       }
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "tests\\uploadDownload.test.ts",
-      "file": "tests/uploadDownload.test.ts",
+      "title": "tests\\Intermediate\\howToStopRequest.test.ts",
+      "file": "tests/Intermediate/howToStopRequest.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Upload files",
+          "title": "Block adds",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,34 +80,30 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 13189,
+                  "duration": 11760,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "\u001b[33mtrue\u001b[39m\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-10T02:26:14.835Z",
+                  "startTime": "2024-04-20T16:31:34.905Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "bff505410ff9353f2355-8e4e25e3d43cb5a7928a",
-          "file": "tests/uploadDownload.test.ts",
-          "line": 23,
-          "column": 5
+          "id": "51820746681167dfef1a-f05d177dd84bf510fccc",
+          "file": "tests/Intermediate/howToStopRequest.test.ts",
+          "line": 16,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-10T02:26:13.118Z",
-    "duration": 18623.066,
+    "startTime": "2024-04-20T16:31:33.769Z",
+    "duration": 15251.444,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
