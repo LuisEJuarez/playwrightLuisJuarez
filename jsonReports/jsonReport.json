@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\lernestojuarez\\Documents\\ApexTrainings\\Tech Thread\\Playwright\\playwright.config.ts",
-    "rootDir": "C:/Users/lernestojuarez/Documents/ApexTrainings/Tech Thread/Playwright",
+    "configFile": "c:\\Users\\lernestojuarez\\Documents\\ApexTrainings\\Tech Thread\\Playwright\\playwright.config.ts",
+    "rootDir": "c:/Users/lernestojuarez/Documents/ApexTrainings/Tech Thread/Playwright",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -39,15 +39,15 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/lernestojuarez/Documents/ApexTrainings/Tech Thread/Playwright/test-results",
+        "outputDir": "c:/Users/lernestojuarez/Documents/ApexTrainings/Tech Thread/Playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "",
         "name": "",
-        "testDir": "C:/Users/lernestojuarez/Documents/ApexTrainings/Tech Thread/Playwright",
+        "testDir": "c:/Users/lernestojuarez/Documents/ApexTrainings/Tech Thread/Playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/intermediate/howToStopRequest.test.ts"
+          "tests/advanced/slider.test.ts"
         ],
         "timeout": 30000
       }
@@ -60,14 +60,14 @@
   },
   "suites": [
     {
-      "title": "tests\\Intermediate\\howToStopRequest.test.ts",
-      "file": "tests/Intermediate/howToStopRequest.test.ts",
+      "title": "tests\\Advanced\\slider.test.ts",
+      "file": "tests/Advanced/slider.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Block adds",
-          "ok": true,
+          "title": "my slider demo",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -79,34 +79,85 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 11760,
-                  "errors": [],
-                  "stdout": [],
+                  "status": "timedOut",
+                  "duration": 30011,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "c:\\Users\\lernestojuarez\\Documents\\ApexTrainings\\Tech Thread\\Playwright\\tests\\Advanced\\slider.test.ts",
+                        "column": 38,
+                        "line": 25
+                      },
+                      "message": "Error: mouse.move: Target page, context or browser has been closed\n\n\u001b[0m \u001b[90m 23 |\u001b[39m                     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mmouse\u001b[33m.\u001b[39mmove(srcBound\u001b[33m.\u001b[39mx \u001b[33m+\u001b[39m srcBound\u001b[33m.\u001b[39mwidth \u001b[33m/\u001b[39m \u001b[35m2\u001b[39m\u001b[33m,\u001b[39m srcBound\u001b[33m.\u001b[39my \u001b[33m+\u001b[39m srcBound\u001b[33m.\u001b[39mheight \u001b[33m/\u001b[39m \u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m                     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mmouse\u001b[33m.\u001b[39mdown()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m                     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mmouse\u001b[33m.\u001b[39mmove(srcBound\u001b[33m.\u001b[39mx \u001b[33m+\u001b[39m \u001b[35m15\u001b[39m\u001b[33m,\u001b[39m srcBound\u001b[33m.\u001b[39my \u001b[33m+\u001b[39m srcBound\u001b[33m.\u001b[39mheight \u001b[33m/\u001b[39m \u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m                     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mmouse\u001b[33m.\u001b[39mdown()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m                     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mmouse\u001b[33m.\u001b[39mup()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m\u001b[0m\n\n\u001b[2m    at c:\\Users\\lernestojuarez\\Documents\\ApexTrainings\\Tech Thread\\Playwright\\tests\\Advanced\\slider.test.ts:25:38\u001b[22m\n\u001b[2m    at c:\\Users\\lernestojuarez\\Documents\\ApexTrainings\\Tech Thread\\Playwright\\tests\\Advanced\\slider.test.ts:9:5\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Initial text: 25000\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-20T16:31:34.905Z",
-                  "attachments": []
+                  "steps": [
+                    {
+                      "title": "Goto demo site",
+                      "duration": 6121
+                    },
+                    {
+                      "title": "handle slider",
+                      "duration": 22895,
+                      "error": {
+                        "message": "Error: mouse.move: Target page, context or browser has been closed",
+                        "stack": "Error: mouse.move: Target page, context or browser has been closed\n    at c:\\Users\\lernestojuarez\\Documents\\ApexTrainings\\Tech Thread\\Playwright\\tests\\Advanced\\slider.test.ts:25:38\n    at c:\\Users\\lernestojuarez\\Documents\\ApexTrainings\\Tech Thread\\Playwright\\tests\\Advanced\\slider.test.ts:9:5",
+                        "location": {
+                          "file": "c:\\Users\\lernestojuarez\\Documents\\ApexTrainings\\Tech Thread\\Playwright\\tests\\Advanced\\slider.test.ts",
+                          "column": 38,
+                          "line": 25
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 23 |\u001b[39m                     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mmouse\u001b[33m.\u001b[39mmove(srcBound\u001b[33m.\u001b[39mx \u001b[33m+\u001b[39m srcBound\u001b[33m.\u001b[39mwidth \u001b[33m/\u001b[39m \u001b[35m2\u001b[39m\u001b[33m,\u001b[39m srcBound\u001b[33m.\u001b[39my \u001b[33m+\u001b[39m srcBound\u001b[33m.\u001b[39mheight \u001b[33m/\u001b[39m \u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m                     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mmouse\u001b[33m.\u001b[39mdown()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m                     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mmouse\u001b[33m.\u001b[39mmove(srcBound\u001b[33m.\u001b[39mx \u001b[33m+\u001b[39m \u001b[35m15\u001b[39m\u001b[33m,\u001b[39m srcBound\u001b[33m.\u001b[39my \u001b[33m+\u001b[39m srcBound\u001b[33m.\u001b[39mheight \u001b[33m/\u001b[39m \u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m                     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mmouse\u001b[33m.\u001b[39mdown()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m                     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mmouse\u001b[33m.\u001b[39mup()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2024-06-15T14:56:54.181Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "c:\\Users\\lernestojuarez\\Documents\\ApexTrainings\\Tech Thread\\Playwright\\test-results\\tests-Advanced-slider-my-slider-demo\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "c:\\Users\\lernestojuarez\\Documents\\ApexTrainings\\Tech Thread\\Playwright\\test-results\\tests-Advanced-slider-my-slider-demo\\video.webm"
+                    }
+                  ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "51820746681167dfef1a-f05d177dd84bf510fccc",
-          "file": "tests/Intermediate/howToStopRequest.test.ts",
-          "line": 16,
-          "column": 6
+          "id": "5498241986427be29219-1388e2b4eefd48ac19f6",
+          "file": "tests/Advanced/slider.test.ts",
+          "line": 4,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-20T16:31:33.769Z",
-    "duration": 15251.444,
-    "expected": 1,
+    "startTime": "2024-06-15T14:56:52.855Z",
+    "duration": 36613.574,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

@@ -1,7 +1,7 @@
 import { PlaywrightTestConfig, defineConfig, devices } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-    testMatch: ["tests/intermediate/howToStopRequest.test.ts"],  //comment to show the play green button at left on test
+    testMatch: ["tests/advanced/slider.test.ts"],  //comment to show the play green button at left on test
     use: {
         baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
         extraHTTPHeaders: {
